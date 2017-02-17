@@ -14,18 +14,18 @@ Data Visualization via Google Cardboard
 
 ### Install Unity 
   *(Make Sure proper target builds are selected on install)*
-    You will need to make a Unity account and select a license (Personal)
+   * You will need to make a Unity account and select a license (Personal)
 
 ### Install Android Studio
 
 ### Extract Zip 
-    The key file in this zip is the GoogleVRForUnity.unitypackage file. 
-    We’re going to add that to Unity later, so remember where you extract it.
+   * The key file in this zip is the GoogleVRForUnity.unitypackage file. 
+   * We’re going to add that to Unity later, so remember where you extract it.
 
 ### Importing Google VR to unity:
-    Open Unity
-    Create a new project
-    Go to Assets -> Import Package -> Custom Package -> 
-    Browse to where you stored GoogleVRForUnity.unitypackage
+   * Open Unity
+   * Create a new project
+   * Go to Assets -> Import Package -> Custom Package -> 
+   * Browse to where you stored GoogleVRForUnity.unitypackage
 ### Note:
 *A dialog box will pop up with the install, once it’s done make sure to click into Unity, that should bring up a selection tool with options on which builds you would like to install with the Google SDK.*
