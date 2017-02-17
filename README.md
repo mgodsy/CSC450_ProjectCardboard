@@ -27,5 +27,6 @@ Data Visualization via Google Cardboard
    * Create a new project
    * Go to Assets -> Import Package -> Custom Package -> 
    * Browse to where you stored GoogleVRForUnity.unitypackage
+   
 ### Note:
 *A dialog box will pop up with the install, once it’s done make sure to click into Unity, that should bring up a selection tool with options on which builds you would like to install with the Google SDK.*
