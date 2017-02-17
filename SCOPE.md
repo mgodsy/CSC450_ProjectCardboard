@@ -1,5 +1,5 @@
 # CSC450_ProjectCardboard
-Data Visualization via Google Cardboard
+* *Data Visualization via Google Cardboard* *
 
 ### Introduction
 
