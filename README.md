@@ -14,7 +14,7 @@ Data Visualization via Google Cardboard
 
 ### Install Unity 
   *(Make Sure proper target builds are selected on install)*
-  You will need to make a Unity account and select a license (Personal)
+    You will need to make a Unity account and select a license (Personal)
 
 ### Install Android Studio
 
