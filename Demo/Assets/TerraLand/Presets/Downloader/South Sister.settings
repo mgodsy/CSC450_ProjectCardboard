@@ -1,0 +1,71 @@
+Terrain Generation Settings
+
+Address: South Sister
+Latitude: 44.10345 Degree
+Longitude: -121.7692 Degree
+NewTerrainGrid: _2x2
+NewTerrainSizeX: 18000
+NewTerrainSizeZ: 18000
+ConstrainedAspect: True
+NewTerrainPixelError: 2
+AreaSelectionMode: 0
+LatExtents: 18
+LonExtents: 18
+SquareArea: True
+ArbitraryTop: 44.1842983755708
+ArbitraryLeft: -121.881788960816
+ArbitraryBottom: 44.0226016244292
+ArbitraryRight: -121.656611039184
+MapType: 0
+PreviewZoomLevel: 11
+SaveASCII: False
+SaveRAW: True
+SaveTIFF: False
+TerrainResolution: 4096
+TerrainSmooth: 1
+ElevationExaggeration: 1
+GridTerrain: 4096
+ImageGridPerTerrain: 2
+ImageResolution: 4096
+TextureTerrain: 0
+Quality: 100
+ImportCompression: False
+AutoScale: False
+Anisotropic: 4
+AlphaResolution: 512
+AsyncCalls: 50
+EngineResolutionMode: 4
+ResolutionPresetSection: False
+AvailableDataSection: False
+NewTerrainSection: False
+LocationSection: False
+AreaSizeSection: False
+InteractiveMapSection: True
+HeghtmapDownloaderSection: False
+SaveElevationSection: False
+ImageDownloaderSection: False
+FailedDownloaderSection: False
+SplitSizeNew: 2
+TotalTerrainsNew: 4
+UpdateArea: True
+ShowArea: True
+ShowCross: True
+SquareArea: True
+SmoothBlendIndex: 0
+SmoothBlend: 0.9
+VisualMapsSection: True
+VisualMapIndex: 2
+AspectIsActive: True
+ElevationIsActive: True
+HillshadeMDIsActive: True
+SlopeIsActive: True
+VisualMapResolution: 4096
+VisualFormat: JPG
+SlopeZFactor: 0.75
+HillshadeAltitude: 50
+HillshadeAzimuth: 150
+HillshadeZFactor: 0.75
+AutomaticSunPosition: True
+AnalysisPreviewIndex: 0
+ProjectorColor: 0 0 0 1
+ProjectorStrength: 1.25

@@ -1,0 +1,62 @@
+
+TERRALAND DOWNLOADER SETUP IN EDITOR
+************************************************************************************************************************************************************************************
+
+This is a one-time setup needed for each Unity installation.
+Do the following steps in order to have faster & asynchronous Satellite Image downloads in "Terraland Downloader":
+
+
+Win system
+
+Go to the Path: "... Unity installation folder"\Editor\Data\Mono\etc\mono\2.0
+Backup "machine.config" & "web.config" files by renaming them to "machine_backup.config"
+Replace "machine.config" & "web.config" files by copying the provided config files
+Restart Unity
+
+
+Mac system
+
+Go to the Applications folder
+Path: Locate Unity.app, right click on it and select "Show Package Contents" + "/Applications/Unity/Unity.app/Contents/Frameworks/Mono/etc/mono/2.0"
+Backup "machine.config" & "web.config" files by renaming them to "machine_backup.config"
+Replace "machine.config" & "web.config" files by copying the provided config files
+Restart Unity
+
+
+
+
+TERRALAND DOWNLOADER SETUP IN BUILD
+************************************************************************************************************************************************************************************
+
+This is a one-time setup needed for each Unity build.
+When you build the game using TerraLand Runtime API, you also need to do similar steps as above in your root build folder as follows:
+
+
+Win system
+
+Go to your build's root Data folder and then go to "Mono\etc\mono\2.0"
+Backup "machine.config" & "web.config" files by renaming them to "machine_backup.config"
+Replace "machine.config" & "web.config" files by copying the provided config files
+
+
+Mac system
+
+Locate your build's .app file, right click on it and select "Show Package Contents" and then go to "Data/Managed/etc/mono/2.0"
+Backup "machine.config" & "web.config" files by renaming them to "machine_backup.config"
+Replace "machine.config" & "web.config" files by copying the provided config files
+
+
+
+
+************************************************************************************************************************************************************************************
+
+Now TerraLand Downloader can download multiple data files and especially Satellite Images at the same time and gets the most out of your internet connection speed.
+This overrides the default limitation of 2 async calls through web servers in .Net applications.
+
+If you encounter any issues in Unity, rename back-up files to their initial state and let us know about it through this email address "info@terraunity.com".
+
+
+TerraUnity Team
+info@terraunity.com
+www.terraunity.com
+
