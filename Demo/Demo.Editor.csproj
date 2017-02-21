@@ -13,7 +13,7 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile>Assets\gmcs.rsp</CompilerResponseFile>
+    <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Editor:5</UnityProjectType>
     <UnityBuildTarget>Android:13</UnityBuildTarget>
     <UnityVersion>5.5.0f3</UnityVersion>
@@ -27,8 +27,8 @@
     <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_0;UNITY_5_5;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_ANDROID;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VIDEO;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;ENABLE_VSTU;CROSS_PLATFORM_INPUT;MOBILE_INPUT;</DefineConstants>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_0;UNITY_5_5;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_ANDROID;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VIDEO;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;ENABLE_VSTU</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -37,8 +37,8 @@
     <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_0;UNITY_5_5;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_ANDROID;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VIDEO;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;ENABLE_VSTU;CROSS_PLATFORM_INPUT;MOBILE_INPUT;</DefineConstants>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_0;UNITY_5_5;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_ANDROID;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VIDEO;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;ENABLE_VSTU</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
@@ -54,6 +54,9 @@
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>Library\UnityAssemblies\UnityEditor.Advertisements.dll</HintPath>
@@ -97,6 +100,9 @@
     <Reference Include="UnityEngine.HoloLens">
       <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Purchasing">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Purchasing.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.VR">
       <HintPath>Library\UnityAssemblies\UnityEditor.VR.dll</HintPath>
     </Reference>
@@ -124,81 +130,17 @@
     <Reference Include="UnityEditor.iOS.Extensions.Common">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
-    <Reference Include="AForge.Imaging">
-      <HintPath>Assets\TerraLand\Plugins\AForge.Imaging.dll</HintPath>
-    </Reference>
-    <Reference Include="AForge">
-      <HintPath>Assets\TerraLand\Plugins\AForge.dll</HintPath>
-    </Reference>
-    <Reference Include="NumericComparer">
-      <HintPath>Assets\TerraLand\Plugins\NumericComparer.dll</HintPath>
-    </Reference>
-    <Reference Include="TerraLand 2">
-      <HintPath>Assets\TerraLand\Editor\TerraLand 2.dll</HintPath>
-    </Reference>
-    <Reference Include="BitMiracle.LibTiff.NET">
-      <HintPath>Assets\TerraLand\Plugins\BitMiracle.LibTiff.NET.dll</HintPath>
-    </Reference>
-    <Reference Include="AForge.Math">
-      <HintPath>Assets\TerraLand\Plugins\AForge.Math.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Services">
-      <HintPath>Assets\TerraLand\Plugins\System.Web.Services.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Windows.Forms">
-      <HintPath>Assets\TerraLand\Plugins\System.Windows.Forms.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Drawing">
-      <HintPath>Assets\TerraLand\Plugins\System.Drawing.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web">
-      <HintPath>Assets\TerraLand\Plugins\System.Web.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Drawing">
-      <HintPath>Assets\Runtime API Development\Plugins\System.Drawing.dll</HintPath>
-    </Reference>
-    <Reference Include="TerraLand Runtime API">
-      <HintPath>Assets\Runtime API Development\WorldExplorer\Plugins\TerraLand Runtime API.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Services">
-      <HintPath>Assets\Runtime API Development\Plugins\System.Web.Services.dll</HintPath>
-    </Reference>
-    <Reference Include="NumericComparer">
-      <HintPath>Assets\Runtime API Development\Plugins\NumericComparer.dll</HintPath>
-    </Reference>
-    <Reference Include="BitMiracle.LibTiff.NET">
-      <HintPath>Assets\Runtime API Development\Plugins\BitMiracle.LibTiff.NET.dll</HintPath>
+    <Reference Include="Google.ProtocolBuffers">
+      <HintPath>Assets\Plugins\Google.ProtocolBuffers.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Demo.Plugins.csproj">
-      <Project>{E6D166B7-294A-576C-AE9B-B38D45AFEF0E}</Project>
-      <Name>Demo.Plugins</Name>
-    </ProjectReference>
     <ProjectReference Include="Demo.csproj">
       <Project>{244BD3C2-E17F-8FDF-0386-659EFA4489A9}</Project>
       <Name>Demo</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Editor\AtmosphericScatteringEditor.cs" />
-    <Compile Include="Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
-    <Compile Include="Assets\Editor\FullPackageExporter.cs" />
-    <Compile Include="Assets\Editor\ImageEffects\AntialiasingEditor.cs" />
-    <Compile Include="Assets\Editor\ImageEffects\BloomAndFlaresEditor.cs" />
-    <Compile Include="Assets\Editor\ImageEffects\BloomEditor.cs" />
-    <Compile Include="Assets\Editor\ImageEffects\CameraMotionBlurEditor.cs" />
-    <Compile Include="Assets\Editor\ImageEffects\ColorCorrectionCurvesEditor.cs" />
-    <Compile Include="Assets\Editor\ImageEffects\ColorCorrectionLookupEditor.cs" />
-    <Compile Include="Assets\Editor\ImageEffects\CreaseShadingEditor.cs" />
-    <Compile Include="Assets\Editor\ImageEffects\DepthOfFieldDeprecatedEditor.cs" />
-    <Compile Include="Assets\Editor\ImageEffects\DepthOfFieldEditor.cs" />
-    <Compile Include="Assets\Editor\ImageEffects\EdgeDetectionEditor.cs" />
-    <Compile Include="Assets\Editor\ImageEffects\NoiseAndGrainEditor.cs" />
-    <Compile Include="Assets\Editor\ImageEffects\SunShaftsEditor.cs" />
-    <Compile Include="Assets\Editor\ImageEffects\TonemappingEditor.cs" />
-    <Compile Include="Assets\Editor\ImageEffects\VignetteAndChromaticAberrationEditor.cs" />
-    <Compile Include="Assets\Editor\MeshRendererShadows.cs" />
     <Compile Include="Assets\GoogleVR\Demos\Editor\DemoInputManagerEditor.cs" />
     <Compile Include="Assets\GoogleVR\Editor\GvrAudioListenerEditor.cs" />
     <Compile Include="Assets\GoogleVR\Editor\GvrAudioRoomEditor.cs" />
@@ -209,80 +151,6 @@
     <Compile Include="Assets\GoogleVR\Legacy\Editor\GvrMenu.cs" />
     <Compile Include="Assets\GoogleVR\Legacy\Editor\GvrViewerEditor.cs" />
     <Compile Include="Assets\GoogleVR\Legacy\Editor\StereoControllerEditor.cs" />
-    <Compile Include="Assets\PostProcessing\Editor\Attributes\PostProcessingModelEditorAttribute.cs" />
-    <Compile Include="Assets\PostProcessing\Editor\Models\AmbientOcclusionModelEditor.cs" />
-    <Compile Include="Assets\PostProcessing\Editor\Models\AntialiasingModelEditor.cs" />
-    <Compile Include="Assets\PostProcessing\Editor\Models\BloomModelEditor.cs" />
-    <Compile Include="Assets\PostProcessing\Editor\Models\BuiltinDebugViewsEditor.cs" />
-    <Compile Include="Assets\PostProcessing\Editor\Models\ChromaticAberrationEditor.cs" />
-    <Compile Include="Assets\PostProcessing\Editor\Models\ColorGradingModelEditor.cs" />
-    <Compile Include="Assets\PostProcessing\Editor\Models\DefaultPostFxModelEditor.cs" />
-    <Compile Include="Assets\PostProcessing\Editor\Models\DepthOfFieldModelEditor.cs" />
-    <Compile Include="Assets\PostProcessing\Editor\Models\EyeAdaptationModelEditor.cs" />
-    <Compile Include="Assets\PostProcessing\Editor\Models\GrainModelEditor.cs" />
-    <Compile Include="Assets\PostProcessing\Editor\Models\MotionBlurModelEditor.cs" />
-    <Compile Include="Assets\PostProcessing\Editor\Models\ScreenSpaceReflectionModelEditor.cs" />
-    <Compile Include="Assets\PostProcessing\Editor\Models\UserLutModelEditor.cs" />
-    <Compile Include="Assets\PostProcessing\Editor\Models\VignetteModelEditor.cs" />
-    <Compile Include="Assets\PostProcessing\Editor\Monitors\HistogramMonitor.cs" />
-    <Compile Include="Assets\PostProcessing\Editor\Monitors\ParadeMonitor.cs" />
-    <Compile Include="Assets\PostProcessing\Editor\Monitors\VectorscopeMonitor.cs" />
-    <Compile Include="Assets\PostProcessing\Editor\Monitors\WaveformMonitor.cs" />
-    <Compile Include="Assets\PostProcessing\Editor\PostProcessingBehaviourEditor.cs" />
-    <Compile Include="Assets\PostProcessing\Editor\PostProcessingFactory.cs" />
-    <Compile Include="Assets\PostProcessing\Editor\PostProcessingInspector.cs" />
-    <Compile Include="Assets\PostProcessing\Editor\PostProcessingModelEditor.cs" />
-    <Compile Include="Assets\PostProcessing\Editor\PostProcessingMonitor.cs" />
-    <Compile Include="Assets\PostProcessing\Editor\PropertyDrawers\GetSetDrawer.cs" />
-    <Compile Include="Assets\PostProcessing\Editor\PropertyDrawers\MinDrawer.cs" />
-    <Compile Include="Assets\PostProcessing\Editor\PropertyDrawers\TrackballGroupDrawer.cs" />
-    <Compile Include="Assets\PostProcessing\Editor\Utils\CurveEditor.cs" />
-    <Compile Include="Assets\PostProcessing\Editor\Utils\EditorGUIHelper.cs" />
-    <Compile Include="Assets\PostProcessing\Editor\Utils\EditorResources.cs" />
-    <Compile Include="Assets\PostProcessing\Editor\Utils\FxStyles.cs" />
-    <Compile Include="Assets\PostProcessing\Editor\Utils\ReflectionUtils.cs" />
-    <Compile Include="Assets\Runtime API Development\Resources\kode80\Clouds\Editor\CloudsEditor.cs" />
-    <Compile Include="Assets\Runtime API Development\Resources\kode80\Clouds\Editor\CubemapExporter.cs" />
-    <Compile Include="Assets\Runtime API Development\Resources\kode80\Clouds\Editor\TimeOfDayEditor.cs" />
-    <Compile Include="Assets\Runtime API Development\Resources\kode80\Editor\Localization\Localize.cs" />
-    <Compile Include="Assets\Runtime API Development\Resources\kode80\Editor\Utils\ScriptableObjectUtility.cs" />
-    <Compile Include="Assets\Runtime API Development\Resources\kode80\Editor\Utils\UnityFileUtility.cs" />
-    <Compile Include="Assets\Runtime API Development\Resources\kode80\UnityTools\EditorTools\Editor\ComponentContextMenu.cs" />
-    <Compile Include="Assets\Runtime API Development\Resources\kode80\UnityTools\EditorTools\Editor\ComponentList.cs" />
-    <Compile Include="Assets\Runtime API Development\Resources\kode80\UnityTools\EditorTools\Editor\RecordVideoWindow.cs" />
-    <Compile Include="Assets\Runtime API Development\Resources\kode80\UnityTools\GUIWrapper\Editor\GUIBase.cs" />
-    <Compile Include="Assets\Runtime API Development\Resources\kode80\UnityTools\GUIWrapper\Editor\GUIBaseContainer.cs" />
-    <Compile Include="Assets\Runtime API Development\Resources\kode80\UnityTools\GUIWrapper\Editor\GUIButton.cs" />
-    <Compile Include="Assets\Runtime API Development\Resources\kode80\UnityTools\GUIWrapper\Editor\GUIColorField.cs" />
-    <Compile Include="Assets\Runtime API Development\Resources\kode80\UnityTools\GUIWrapper\Editor\GUIDefaultInspector.cs" />
-    <Compile Include="Assets\Runtime API Development\Resources\kode80\UnityTools\GUIWrapper\Editor\GUIDelayedIntField.cs" />
-    <Compile Include="Assets\Runtime API Development\Resources\kode80\UnityTools\GUIWrapper\Editor\GUIEnumPopup.cs" />
-    <Compile Include="Assets\Runtime API Development\Resources\kode80\UnityTools\GUIWrapper\Editor\GUIFoldout.cs" />
-    <Compile Include="Assets\Runtime API Development\Resources\kode80\UnityTools\GUIWrapper\Editor\GUIHorizontal.cs" />
-    <Compile Include="Assets\Runtime API Development\Resources\kode80\UnityTools\GUIWrapper\Editor\GUIIntSlider.cs" />
-    <Compile Include="Assets\Runtime API Development\Resources\kode80\UnityTools\GUIWrapper\Editor\GUILabel.cs" />
-    <Compile Include="Assets\Runtime API Development\Resources\kode80\UnityTools\GUIWrapper\Editor\GUIObjectField.cs" />
-    <Compile Include="Assets\Runtime API Development\Resources\kode80\UnityTools\GUIWrapper\Editor\GUIPopup.cs" />
-    <Compile Include="Assets\Runtime API Development\Resources\kode80\UnityTools\GUIWrapper\Editor\GUIScrollView.cs" />
-    <Compile Include="Assets\Runtime API Development\Resources\kode80\UnityTools\GUIWrapper\Editor\GUISlider.cs" />
-    <Compile Include="Assets\Runtime API Development\Resources\kode80\UnityTools\GUIWrapper\Editor\GUISpace.cs" />
-    <Compile Include="Assets\Runtime API Development\Resources\kode80\UnityTools\GUIWrapper\Editor\GUITextField.cs" />
-    <Compile Include="Assets\Runtime API Development\Resources\kode80\UnityTools\GUIWrapper\Editor\GUITextureField.cs" />
-    <Compile Include="Assets\Runtime API Development\Resources\kode80\UnityTools\GUIWrapper\Editor\GUIToggle.cs" />
-    <Compile Include="Assets\Runtime API Development\Resources\kode80\UnityTools\GUIWrapper\Editor\GUIToolbar.cs" />
-    <Compile Include="Assets\Runtime API Development\Resources\kode80\UnityTools\GUIWrapper\Editor\GUIVector3Field.cs" />
-    <Compile Include="Assets\Runtime API Development\Resources\kode80\UnityTools\GUIWrapper\Editor\GUIVertical.cs" />
-    <Compile Include="Assets\Runtime API Development\Resources\kode80\UnityTools\Versioning\Editor\AssetUpdateWindow.cs" />
-    <Compile Include="Assets\Runtime API Development\Resources\kode80\UnityTools\Versioning\Editor\AssetUpdater.cs" />
-    <Compile Include="Assets\Runtime API Development\Resources\kode80\UnityTools\Versioning\Editor\AssetVersion.cs" />
-    <Compile Include="Assets\Runtime API Development\Resources\kode80\UnityTools\Versioning\Editor\AssetVersionDownloader.cs" />
-    <Compile Include="Assets\Runtime API Development\Resources\kode80\UnityTools\Versioning\Editor\SemanticVersion.cs" />
-    <Compile Include="Assets\Runtime API Development\Shadow Projector\Scripts\Editor\DrawSceneObjectEditor.cs" />
-    <Compile Include="Assets\Runtime API Development\Shadow Projector\Scripts\Editor\DrawTargetObjectEditor.cs" />
-    <Compile Include="Assets\Runtime API Development\Shadow Projector\Scripts\Editor\EditorBase.cs" />
-    <Compile Include="Assets\Runtime API Development\Shadow Projector\Scripts\Editor\MipmappedShadowFallbackEditor.cs" />
-    <Compile Include="Assets\Runtime API Development\Shadow Projector\Scripts\Editor\ShadowTextureRendererEditor.cs" />
-    <Compile Include="Assets\TerraLand\Editor\TerraLandSettings.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\GoogleVR\Demos\Environment\DemoEnvUnlitGrayscale.shader" />
@@ -303,178 +171,8 @@
     <None Include="Assets\GoogleVR\Shaders\GvrUnlitTransparentOverlayColor.shader" />
     <None Include="Assets\Plugins\Android\AndroidManifest-Cardboard.xml" />
     <None Include="Assets\Plugins\Android\AndroidManifest-Daydream.xml" />
+    <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
     <None Include="Assets\Plugins\Android\proguard-gvr.txt" />
-    <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
-    <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
-    <None Include="Assets\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />
-    <None Include="Assets\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
-    <None Include="Assets\PostProcessing\Editor Resources\Monitors\VectorscopeRender.shader" />
-    <None Include="Assets\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
-    <None Include="Assets\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
-    <None Include="Assets\PostProcessing\Editor Resources\UI\CurveBackground.shader" />
-    <None Include="Assets\PostProcessing\Editor Resources\UI\Trackball.shader" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\ACES.cginc" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\AmbientOcclusion.shader" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\Blit.shader" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\Bloom.cginc" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\Bloom.shader" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\BuiltinDebugViews.shader" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\Common.cginc" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.cginc" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\DiskKernels.cginc" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\EyeAdaptation.cginc" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\EyeAdaptation.shader" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\EyeHistogram.compute" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\FXAA.shader" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\FXAA3.cginc" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\GrainGen.shader" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\LutGen.shader" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.shader" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\TAA.cginc" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\TAA.shader" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\Tonemapping.cginc" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\Uber.shader" />
-    <None Include="Assets\Runtime API Development\Resources\Atmospheric Scattering\Shaders\AtmosphericScattering.cginc" />
-    <None Include="Assets\Runtime API Development\Resources\Atmospheric Scattering\Shaders\AtmosphericScattering.compute" />
-    <None Include="Assets\Runtime API Development\Resources\Atmospheric Scattering\Shaders\AtmosphericScattering.shader" />
-    <None Include="Assets\Runtime API Development\Resources\Atmospheric Scattering\Shaders\AtmosphericScatteringSkybox.shader" />
-    <None Include="Assets\Runtime API Development\Resources\Atmospheric Scattering\Shaders\LightShafts.shader" />
-    <None Include="Assets\Runtime API Development\Resources\Skybox-Procedural.shader" />
-    <None Include="Assets\Runtime API Development\Resources\Terrain Shaders\Standard-AddPass.shader" />
-    <None Include="Assets\Runtime API Development\Resources\Terrain Shaders\Standard-FirstPass-Far.shader" />
-    <None Include="Assets\Runtime API Development\Resources\Terrain Shaders\Standard-FirstPass.shader" />
-    <None Include="Assets\Runtime API Development\Resources\Terrain Shaders\TerrainSplatmapCommon.cginc" />
-    <None Include="Assets\Runtime API Development\Resources\Volumetric Lights\Shaders\BilateralBlur.shader" />
-    <None Include="Assets\Runtime API Development\Resources\Volumetric Lights\Shaders\BlitAdd.shader" />
-    <None Include="Assets\Runtime API Development\Resources\Volumetric Lights\Shaders\VolumetricLight.shader" />
-    <None Include="Assets\Runtime API Development\Resources\kode80\Clouds\AssetVersion.xml" />
-    <None Include="Assets\Runtime API Development\Resources\kode80\Clouds\ChangeLog.txt" />
-    <None Include="Assets\Runtime API Development\Resources\kode80\Clouds\Resources\kode80Clouds\CloudBlender.shader" />
-    <None Include="Assets\Runtime API Development\Resources\kode80\Clouds\Resources\kode80Clouds\CloudBlenderEditor.shader" />
-    <None Include="Assets\Runtime API Development\Resources\kode80\Clouds\Resources\kode80Clouds\CloudCombiner.shader" />
-    <None Include="Assets\Runtime API Development\Resources\kode80\Clouds\Resources\kode80Clouds\CloudShadowPass.shader" />
-    <None Include="Assets\Runtime API Development\Resources\kode80\Clouds\Resources\kode80Clouds\CloudsCrepuscularRays.shader" />
-    <None Include="Assets\Runtime API Development\Resources\kode80\Clouds\Resources\kode80Clouds\TextureBrush.shader" />
-    <None Include="Assets\Runtime API Development\Resources\kode80\Clouds\Resources\kode80Clouds\VolumeClouds.shader" />
-    <None Include="Assets\Runtime API Development\Resources\kode80\Clouds\Resources\kode80Clouds\VolumeCloudsCommon.cginc" />
-    <None Include="Assets\Runtime API Development\Resources\kode80\Effects\Resources\FilmicTonemapping.shader" />
-    <None Include="Assets\Runtime API Development\Resources\kode80\UnityTools\AssetVersion.xml" />
-    <None Include="Assets\Runtime API Development\Shadow Projector\Readme.txt" />
-    <None Include="Assets\Runtime API Development\Shadow Projector\Shaders\Blit\Blit.shader" />
-    <None Include="Assets\Runtime API Development\Shadow Projector\Shaders\Blit\Blur.shader" />
-    <None Include="Assets\Runtime API Development\Shadow Projector\Shaders\Blit\CopyMipmap.shader" />
-    <None Include="Assets\Runtime API Development\Shadow Projector\Shaders\Blit\Downsample.cginc" />
-    <None Include="Assets\Runtime API Development\Shadow Projector\Shaders\Blit\Downsample.shader" />
-    <None Include="Assets\Runtime API Development\Shadow Projector\Shaders\Blit\DownsampleFallback.shader" />
-    <None Include="Assets\Runtime API Development\Shadow Projector\Shaders\Blit\EraseShadow.shader" />
-    <None Include="Assets\Runtime API Development\Shadow Projector\Shaders\Caps\glslCheck.shader" />
-    <None Include="Assets\Runtime API Development\Shadow Projector\Shaders\Caps\tex2DlodExtensionCheck.shader" />
-    <None Include="Assets\Runtime API Development\Shadow Projector\Shaders\Projector\DSPProjector.cginc" />
-    <None Include="Assets\Runtime API Development\Shadow Projector\Shaders\Projector\Dynamic\LightxShadowWithLinearFalloff.shader" />
-    <None Include="Assets\Runtime API Development\Shadow Projector\Shaders\Projector\Dynamic\LightxShadowWithoutFalloff.shader" />
-    <None Include="Assets\Runtime API Development\Shadow Projector\Shaders\Projector\Dynamic\MipmappedShadow.shader" />
-    <None Include="Assets\Runtime API Development\Shadow Projector\Shaders\Projector\Dynamic\ShadowWithLinearFalloff.shader" />
-    <None Include="Assets\Runtime API Development\Shadow Projector\Shaders\Projector\Dynamic\ShadowWithoutFalloff.shader" />
-    <None Include="Assets\Runtime API Development\Shadow Projector\Shaders\Projector\LightWithLinearFalloff.shader" />
-    <None Include="Assets\Runtime API Development\Shadow Projector\Shaders\Projector\LightWithoutFalloff.shader" />
-    <None Include="Assets\Runtime API Development\Shadow Projector\Shaders\Projector\LightxShadowWithLinearFalloff.shader" />
-    <None Include="Assets\Runtime API Development\Shadow Projector\Shaders\Projector\LightxShadowWithoutFalloff.shader" />
-    <None Include="Assets\Runtime API Development\Shadow Projector\Shaders\Projector\MipmappedShadow.shader" />
-    <None Include="Assets\Runtime API Development\Shadow Projector\Shaders\Projector\ShadowWithLinearFalloff.shader" />
-    <None Include="Assets\Runtime API Development\Shadow Projector\Shaders\Projector\ShadowWithoutFalloff.shader" />
-    <None Include="Assets\Runtime API Development\Shadow Projector\Shaders\Shadow\DSPShadow.cginc" />
-    <None Include="Assets\Runtime API Development\Shadow Projector\Shaders\Shadow\ShadowForReplacement.shader" />
-    <None Include="Assets\Runtime API Development\Shadow Projector\Shaders\Shadow\ShadowOpaque.shader" />
-    <None Include="Assets\Runtime API Development\Shadow Projector\Shaders\Shadow\ShadowTransparent.shader" />
-    <None Include="Assets\Runtime API Development\Sun Flare\Resources\GeometryFlare.shader" />
-    <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
-    <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\BlurEffectConeTaps.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlur.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlurDX11.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ChromaticAberrationShader.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrection3DLut.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurves.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurvesSimple.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionEffect.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionSelective.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Adaptation.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Apply.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Luminance.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\MinMaxReduction.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ContrastComposite.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ConvertDepth.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\CreaseApply.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\EdgeDetectNormals.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\FisheyeShader.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\GlobalFog.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\GrayscaleEffect.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\MotionBlur.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\MotionBlurClear.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrain.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrainDX11.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderYUV.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\PrepareSunShaftsBlur.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\RadialBlur.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\SSAOShader.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ScreenSpaceAmbientObscurance.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ScreenSpaceRaytrace.cginc" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\SepiaToneEffect.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ShowAlphaChannel.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\SimpleClear.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\SunShaftsComposite.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Tonemapper.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\TwirlEffect.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\VignettingShader.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\VortexEffect.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\DLAA.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA2.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA3Console.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset3.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\NFAA.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\SSAA.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\Blend.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter2.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBloom.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBlur.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\VignetteShader.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\Bokeh34.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfField34.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableBlur.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\frag_ao.cginc" />
-    <None Include="Assets\Standard Assets\Effects\Projectors\Guidelines.txt" />
-    <None Include="Assets\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />
-    <None Include="Assets\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
-    <None Include="Assets\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularDisplacement.shader" />
-    <None Include="Assets\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularSmooth.shader" />
-    <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />
-    <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonBasicOutline.shader" />
-    <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonLit.shader" />
-    <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
-    <None Include="Assets\TerraLand\Resources\Resources Note.txt" />
-    <None Include="Assets\TerraLand\Resources\TerraUnity\Downloader\GUI Elements.shader" />
-    <None Include="Assets\TerraLand\Resources\TerraUnity\Projector\Projector Analysis.shader" />
-    <None Include="Assets\TerraLand\Resources\TerraUnity\Satellite Image Downloader\Info.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
