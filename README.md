@@ -30,3 +30,16 @@ Data Visualization via Google Cardboard
    
 ### Note:
 *A dialog box will pop up with the install, once it’s done make sure to click into Unity, that should bring up a selection tool with options on which builds you would like to install with the Google SDK.*
+
+## Steps after Downloading the Repo
+
+### Opening the project
+ * Open Unity 5.5.0f3
+ * Select Open (at the top)
+ * Navigate to where you stored the repo on your file system
+ * Click on the Demo folder once and hit "Select Folder"
+ * Unity is Going to install all of the packages for the project
+ * Once the Project loads there may be Errors, if they are Google asset related you will need to import the enitre GoogleVR.unity package again. 
+ * There will also be an error related to the code, double clicking on it will bring you to Visual Studios editor, there is a line of cade that is trying to return a false value, comment the return out and save. - This happens often and the saved file somehow doesn't stick
+ * after all that should be good to run
+ 
