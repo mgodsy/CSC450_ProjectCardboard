@@ -13,13 +13,13 @@ public class Rotate : MonoBehaviour
 
 
     // Function to call to set table to rotate left
-    void rotateLeft()
+    public void rotateLeft()
     {
         rotateClockwise = true;
     }
 
     // Function to call to set table to rotate right
-    void rotateRight()
+    public void rotateRight()
     {
         rotateCounterClockwise = true;
     }
