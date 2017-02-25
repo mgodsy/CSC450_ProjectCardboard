@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/VRMain.unity
+- path: Assets/Scenes/TableSceneND.unity
   isLoaded: 1
   isActive: 1
