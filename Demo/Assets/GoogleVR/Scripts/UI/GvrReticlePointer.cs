@@ -13,6 +13,7 @@
 // limitations under the License.
 
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 /// Draws a circular reticle in front of any object that the user points at.
 /// The circle dilates if the object is clickable.
@@ -53,12 +54,18 @@ public class GvrReticlePointer : GvrBasePointer {
   private float reticleInnerDiameter = 0.0f;
   private float reticleOuterDiameter = 0.0f;
 
+    //Building the scripts for Gaze timer
+    private float gazeStartTime;
+    private GameObject gazedAt;
+
   protected override void Start () {
     base.Start();
 
     CreateReticleVertices();
 
     materialComp = gameObject.GetComponent<Renderer>().material;
+        gazeStartTime = -1f;
+        gazedAt = null;
   }
 
   void Update() {
@@ -80,6 +87,8 @@ public class GvrReticlePointer : GvrBasePointer {
   public override void OnPointerEnter(GameObject targetObject, Vector3 intersectionPosition,
      Ray intersectionRay, bool isInteractive) {
     SetPointerTarget(intersectionPosition, isInteractive);
+        gazedAt = targetObject;
+        gazeStartTime = Time.time;
   }
 
   /// Called every frame the user is still pointing at a valid GameObject. This
@@ -91,6 +100,11 @@ public class GvrReticlePointer : GvrBasePointer {
   public override void OnPointerHover(GameObject targetObject, Vector3 intersectionPosition,
       Ray intersectionRay, bool isInteractive) {
     SetPointerTarget(intersectionPosition, isInteractive);
+        if(gazedAt != null && gazeStartTime > 0f) {
+            if (Time.time - gazeStartTime > 3.0f && ExecuteEvents.CanHandleEvent<TimedInputHandler>(gazedAt))
+                gazeStartTime = -1f;
+                ExecuteEvents.Execute(gazedAt, null, (TimedInputHandler handler, BaseEventData data) => handler.HandleTimedInput ());
+            }
   }
 
   /// Called when the user's look no longer intersects an object previously
