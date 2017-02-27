@@ -101,7 +101,7 @@ public class GvrReticlePointer : GvrBasePointer {
       Ray intersectionRay, bool isInteractive) {
     SetPointerTarget(intersectionPosition, isInteractive);
         if(gazedAt != null && gazeStartTime > 0f) {
-            if (Time.time - gazeStartTime > 3.0f && ExecuteEvents.CanHandleEvent<TimedInputHandler>(gazedAt))
+            if (Time.time - gazeStartTime > 5.0f && ExecuteEvents.CanHandleEvent<TimedInputHandler>(gazedAt))
                 gazeStartTime = -1f;
                 ExecuteEvents.Execute(gazedAt, null, (TimedInputHandler handler, BaseEventData data) => handler.HandleTimedInput ());
             }

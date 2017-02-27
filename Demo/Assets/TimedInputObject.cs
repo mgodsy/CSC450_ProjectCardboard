@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TimedInputObject : TimedInputHandler {
+public class TimedInputObject : MonoBehaviour, TimedInputHandler {
 
 	// Use this for initialization
 	void Start () {
