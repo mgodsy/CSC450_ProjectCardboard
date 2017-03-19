@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LoadingIcon : MonoBehaviour {
 
-    public float rotationSpeed = 90f;
+    public float rotationSpeed = 180f;
 
 	// Use this for initialization
 	void Start () {
