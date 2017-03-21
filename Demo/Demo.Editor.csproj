@@ -158,6 +158,8 @@
     <None Include="Assets\Plugins\Android\AndroidManifest-Daydream.xml" />
     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
     <None Include="Assets\Plugins\Android\proguard-gvr.txt" />
+    <None Include="Assets\Resources\About.txt" />
+    <None Include="Assets\Resources\Credits.txt" />
     <None Include="Assets\Resources\Instructions.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

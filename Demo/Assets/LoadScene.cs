@@ -21,6 +21,16 @@ public class LoadScene : MonoBehaviour {
         SceneManager.LoadSceneAsync("MenuScene");
     }
 
+    public void LoadCredits()
+    {
+        SceneManager.LoadSceneAsync("CreditsScene");
+    }
+
+    public void LoadInstructions()
+    {
+        SceneManager.LoadSceneAsync("InstructionsScene");
+    }
+
 
     // Update is called once per frame
     void Update () {
