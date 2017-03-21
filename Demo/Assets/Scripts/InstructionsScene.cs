@@ -13,7 +13,6 @@ public class InstructionsScene : MonoBehaviour {
 
         TextAsset instructionsFull = Resources.Load("Instructions") as TextAsset;
 
-        //text.text = instructionsFull.text;
         string[] instructions = instructionsFull.text.Split('\n');
 
         for (int i = 0; i < instructions.Length; i++)
