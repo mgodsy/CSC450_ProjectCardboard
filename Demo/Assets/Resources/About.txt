@@ -1,0 +1,4 @@
+Version 1.0.1
+This is an application meant for the Google Cardboard aimed to take Geographical Information System data and represent it in an interactive three-dimensional model. 
+With many applications in research, education, and game design, we hope that this application will provide the frame work for many future endeavors.
+Future work may include streaming information, gamification, and/or integration with social media sites.
