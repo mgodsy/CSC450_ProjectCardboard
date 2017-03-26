@@ -173,6 +173,7 @@
     <Compile Include="Assets\Rotate.cs" />
     <Compile Include="Assets\Scripts\CreditsScene.cs" />
     <Compile Include="Assets\Scripts\InstructionsScene.cs" />
+    <Compile Include="Assets\Scripts\LoadingSceneManager.cs" />
     <Compile Include="Assets\TimedInputObject.cs" />
   </ItemGroup>
   <ItemGroup>
