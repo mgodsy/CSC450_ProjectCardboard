@@ -174,6 +174,7 @@
     <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrIntent.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Video\GvrVideoPlayerTexture.cs" />
     <Compile Include="Assets\InstructionTip.cs" />
+    <Compile Include="Assets\LoadScene.cs" />
     <Compile Include="Assets\LoadingIcon.cs" />
     <Compile Include="Assets\Rotate.cs" />
     <Compile Include="Assets\Scripts\CreditsScene.cs" />
