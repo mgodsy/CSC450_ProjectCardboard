@@ -1,2 +1,34 @@
-Base path: C:/Program Files/Unity5_5_0/Editor/Data
+Base path: C:/Program Files/Unity_5.5.0f3/Editor/Data
 Cmd: getPlatforms
+Cmd: preprocess
+  insize=1867 outsize=1095 ok=1
+Cmd: preprocess
+  insize=1978 outsize=1096 ok=1
+Cmd: preprocess
+  insize=1911 outsize=950 ok=1
+Cmd: preprocess
+  insize=3188 outsize=1773 ok=1
+Cmd: preprocess
+  insize=1248 outsize=1248 ok=1
+Cmd: preprocess
+  insize=1679 outsize=975 ok=1
+Cmd: preprocess
+  insize=1608 outsize=890 ok=1
+Cmd: preprocess
+  insize=2026 outsize=1084 ok=1
+Cmd: preprocess
+  insize=2080 outsize=1254 ok=1
+Cmd: preprocess
+  insize=1815 outsize=899 ok=1
+Cmd: preprocess
+  insize=864 outsize=861 ok=1
+Cmd: preprocess
+  insize=1213 outsize=1213 ok=1
+Cmd: preprocess
+  insize=3369 outsize=1398 ok=1
+Cmd: preprocess
+  insize=2149 outsize=1090 ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=1007 outsize=630 kw= pd=UNITY_NO_SCREENSPACE_SHADOWS UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF2 SHADER_API_DESKTOP UNITY_HARDWARE_TIER3 UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=1007 outsize=422 kw= pd=UNITY_NO_SCREENSPACE_SHADOWS UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF2 SHADER_API_DESKTOP UNITY_HARDWARE_TIER3 UNITY_COLORSPACE_GAMMA ok=1
