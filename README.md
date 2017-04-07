@@ -7,7 +7,7 @@ Data Visualization via Google Cardboard
 
 [Android Studio](https://dl.google.com/dl/android/studio/install/2.2.3.0/android-studio-bundle-145.3537739-windows.exe)
 
-[Google VR SDK for Unity (ver. 1.0.3)] (https://github.com/googlevr/gvr-unity-sdk/archive/f391c2436426857899af1c37f0720b3985631eb3.zip)
+[Google VR SDK for Unity (ver. 1.0.3)](https://github.com/googlevr/gvr-unity-sdk/archive/f391c2436426857899af1c37f0720b3985631eb3.zip)
 
 
 ### Instructions:
