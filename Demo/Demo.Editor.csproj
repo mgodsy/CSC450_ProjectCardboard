@@ -55,9 +55,6 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>Library\UnityAssemblies\UnityEditor.Advertisements.dll</HintPath>
     </Reference>
@@ -100,9 +97,6 @@
     <Reference Include="UnityEngine.HoloLens">
       <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Purchasing">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Purchasing.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.VR">
       <HintPath>Library\UnityAssemblies\UnityEditor.VR.dll</HintPath>
     </Reference>
@@ -132,6 +126,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\GazeClick\Editor\CheckForReferences.cs" />
+    <Compile Include="Assets\GazeClick\Editor\CheckForVersion.cs" />
+    <Compile Include="Assets\GazeClick\Editor\GazeClickEditor.cs" />
     <Compile Include="Assets\GoogleVR\Demos\Editor\DemoInputManagerEditor.cs" />
     <Compile Include="Assets\GoogleVR\Editor\GvrAudioListenerEditor.cs" />
     <Compile Include="Assets\GoogleVR\Editor\GvrAudioRoomEditor.cs" />
@@ -144,6 +141,13 @@
     <Compile Include="Assets\GoogleVR\Legacy\Editor\StereoControllerEditor.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\GazeClick\Advanced Instructions.txt" />
+    <None Include="Assets\GazeClick\Implementation\FillRing.shader" />
+    <None Include="Assets\GazeClick\Implementation\Version1.0.txt" />
+    <None Include="Assets\GazeClick\Implementation\Version1.1.txt" />
+    <None Include="Assets\GazeClick\Implementation\Version1.2.txt" />
+    <None Include="Assets\GazeClick\Implementation\Version1.3.txt" />
+    <None Include="Assets\GazeClick\Instructions.txt" />
     <None Include="Assets\GoogleVR\Demos\Environment\DemoEnvUnlitGrayscale.shader" />
     <None Include="Assets\GoogleVR\Demos\Shaders\GVRDemo\GVRDemoAmbientOcclusion.shader" />
     <None Include="Assets\GoogleVR\Demos\Shaders\GVRDemo\GVRDemoUnlitGrayscaleToColor.shader" />
