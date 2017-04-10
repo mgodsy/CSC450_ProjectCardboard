@@ -84,6 +84,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\GazeClick\Implementation\GazeClick.cs" />
     <Compile Include="Assets\GoogleVR\Demos\Scripts\DemoInputManager.cs" />
     <Compile Include="Assets\GoogleVR\Demos\Scripts\GVRDemo\Teleport.cs" />
     <Compile Include="Assets\GoogleVR\Demos\Scripts\PermissionsDemo\PermissionsFlowManager.cs" />
@@ -184,6 +185,13 @@
     <Compile Include="Assets\TimedInputObject.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\GazeClick\Advanced Instructions.txt" />
+    <None Include="Assets\GazeClick\Implementation\FillRing.shader" />
+    <None Include="Assets\GazeClick\Implementation\Version1.0.txt" />
+    <None Include="Assets\GazeClick\Implementation\Version1.1.txt" />
+    <None Include="Assets\GazeClick\Implementation\Version1.2.txt" />
+    <None Include="Assets\GazeClick\Implementation\Version1.3.txt" />
+    <None Include="Assets\GazeClick\Instructions.txt" />
     <None Include="Assets\GoogleVR\Demos\Environment\DemoEnvUnlitGrayscale.shader" />
     <None Include="Assets\GoogleVR\Demos\Shaders\GVRDemo\GVRDemoAmbientOcclusion.shader" />
     <None Include="Assets\GoogleVR\Demos\Shaders\GVRDemo\GVRDemoUnlitGrayscaleToColor.shader" />
