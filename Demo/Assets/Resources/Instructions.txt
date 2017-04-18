@@ -1,0 +1,5 @@
+Move your head left, right, up, or down to look around.
+To find the menu look down towards your feet
+To move the table, or around the table, put the cursor on the bottom of the direction you want to move and click it with the VR headset button
+Hold the cursor on an icon and push the VR headset button to select after cursor has changed
+Look at a data point to bring up information about it
