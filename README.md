@@ -41,3 +41,6 @@ Data Visualization via Google Cardboard
  * There will also be an error related to the code, double clicking on it will bring you to Visual Studios editor, there is a line of cade that is trying to return a false value, comment the return out and save. - This happens often and the saved file somehow doesn't stick
  * after all that should be good to run
  
+## Unity Extensions utilized in this project:
+ * Terralands 2.0
+ * GazeClick 1.3.0
