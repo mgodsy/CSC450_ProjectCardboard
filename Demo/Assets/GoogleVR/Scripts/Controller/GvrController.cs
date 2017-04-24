@@ -14,9 +14,10 @@
 
 // The controller is not available for versions of Unity without the
 // GVR native integration.
-#if UNITY_HAS_GOOGLEVR && (UNITY_ANDROID || UNITY_EDITOR)
 
 using UnityEngine;
+
+#if UNITY_HAS_GOOGLEVR && (UNITY_ANDROID || UNITY_EDITOR)
 using UnityEngine.VR;
 using System;
 using System.Collections;
@@ -70,6 +71,8 @@ public enum GvrControllerApiStatus {
   /// The underlying VR service is malfunctioning. Try again later.
   ApiMalfunction = 6,
 };
+#endif  // UNITY_HAS_GOOGLEVR && (UNITY_ANDROID || UNITY_EDITOR)
+
 
 /// Main entry point for the Daydream controller API.
 ///
@@ -81,6 +84,7 @@ public enum GvrControllerApiStatus {
 /// To access the controller state, simply read the static properties of this class. For example,
 /// to know the controller's current orientation, use GvrController.Orientation.
 public class GvrController : MonoBehaviour {
+#if UNITY_HAS_GOOGLEVR && (UNITY_ANDROID || UNITY_EDITOR)
   private static GvrController instance;
   private static IControllerProvider controllerProvider;
 
@@ -258,6 +262,21 @@ public class GvrController : MonoBehaviour {
     }
   }
 
+  // Always false in the emulator.
+  public static bool HomeButtonDown {
+    get {
+      return instance != null ? instance.controllerState.homeButtonDown : false;
+    }
+  }
+
+  // Always false in the emulator.
+  public static bool HomeButtonState {
+    get {
+      return instance != null ? instance.controllerState.homeButtonState : false;
+    }
+  }
+
+
   /// If State == GvrConnectionState.Error, this contains details about the error.
   public static string ErrorDetails {
     get {
@@ -312,6 +331,12 @@ public class GvrController : MonoBehaviour {
       GvrViewer sdk = GvrViewer.Instance;
       if (sdk) {
         sdk.Recenter();
+      } else {
+        for (int i = 0; i < Camera.allCameras.Length; i++) {
+          Camera cam = Camera.allCameras[i];
+          // Do not reset pitch, which is how it works on the device.
+          cam.transform.rotation = Quaternion.Euler(cam.transform.rotation.eulerAngles.x, 0, 0);
+        }
       }
 #else
       InputTracking.Recenter();
@@ -344,9 +369,11 @@ public class GvrController : MonoBehaviour {
       // it gets reset.
       yield return waitForEndOfFrame;
       UpdateController();
-      OnControllerUpdate();
+      if (OnControllerUpdate != null) {
+        OnControllerUpdate();
+      }
     }
   }
+#endif  // UNITY_HAS_GOOGLEVR && (UNITY_ANDROID || UNITY_EDITOR)
 }
 
-#endif  // UNITY_HAS_GOOGLEVR && (UNITY_ANDROID || UNITY_EDITOR)

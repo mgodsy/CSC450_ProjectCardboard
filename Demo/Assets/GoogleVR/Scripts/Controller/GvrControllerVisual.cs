@@ -14,7 +14,6 @@
 
 // The controller is not available for versions of Unity without the
 // GVR native integration.
-#if UNITY_HAS_GOOGLEVR && (UNITY_ANDROID || UNITY_EDITOR)
 
 using UnityEngine;
 using System.Collections;
@@ -22,7 +21,7 @@ using System.Collections;
 /// Provides visual feedback for the daydream controller.
 [RequireComponent(typeof(Renderer))]
 public class GvrControllerVisual : MonoBehaviour {
-
+#if UNITY_HAS_GOOGLEVR && (UNITY_ANDROID || UNITY_EDITOR)
   /// Units are in meters.
   private static readonly Vector3 TOUCHPAD_POINT_DIMENSIONS = new Vector3(0.01f, 0.0004f, 0.01f);
   private const float TOUCHPAD_RADIUS = 0.012f;
@@ -37,7 +36,6 @@ public class GvrControllerVisual : MonoBehaviour {
   private MaterialPropertyBlock materialPropertyBlock;
   private int colorId;
 
-
   public GameObject touchPoint;
   public Material material_idle;
   public Material material_app;
@@ -46,14 +44,36 @@ public class GvrControllerVisual : MonoBehaviour {
   public Material touchTransparent;
   public Material touchOpaque;
 
+  /// The suggested rendering alpha value of the controller.
+  /// This is to prevent the controller from intersecting face.
+  public static float AlphaValue  { get; set; }
+
   void Awake() {
+    AlphaValue = 1.0f;
     controllerRenderer = GetComponent<Renderer>();
     touchRenderer = touchPoint.GetComponent<Renderer>();
     materialPropertyBlock = new MaterialPropertyBlock();
     colorId = Shader.PropertyToID("_Color");
+
+    // Makes it so the touchPoint is initialized at the correct scale
+    elapsedScaleTimeSeconds = TOUCHPAD_POINT_SCALE_DURATION_SECONDS;
   }
 
-  void Update() {
+  void Start() {
+    if (GvrArmModel.Instance != null) {
+      GvrArmModel.Instance.OnArmModelUpdate += OnArmModelUpdate;
+    } else {
+      Debug.LogError("Unable to find GvrArmModel.");
+    }
+  }
+
+  void OnDestroy() {
+    if (GvrArmModel.Instance != null) {
+      GvrArmModel.Instance.OnArmModelUpdate -= OnArmModelUpdate;
+    }
+  }
+
+  private void OnArmModelUpdate() {
     // Choose the appropriate material to render based on button states.
     if (GvrController.ClickButton) {
       controllerRenderer.material = material_touchpad;
@@ -107,12 +127,12 @@ public class GvrControllerVisual : MonoBehaviour {
     }
 
     // Adjust transparency.
-    float alpha = GvrArmModel.Instance.alphaValue;
-    Color color = new Color(1.0f, 1.0f, 1.0f, alpha);
+    Color color = controllerRenderer.material.color;
+    color.a = AlphaValue;
     controllerRenderer.GetPropertyBlock(materialPropertyBlock);
     materialPropertyBlock.SetColor(colorId, color);
     controllerRenderer.SetPropertyBlock(materialPropertyBlock);
-    if (alpha < 1.0f) {
+    if (AlphaValue < 1.0f) {
       touchRenderer.material = touchTransparent;
       touchRenderer.GetPropertyBlock(materialPropertyBlock);
       materialPropertyBlock.SetColor(colorId, color);
@@ -121,6 +141,6 @@ public class GvrControllerVisual : MonoBehaviour {
       touchRenderer.material = touchOpaque;
     }
   }
-}
 
 #endif  // UNITY_HAS_GOOGLEVR && (UNITY_ANDROID || UNITY_EDITOR)
+}

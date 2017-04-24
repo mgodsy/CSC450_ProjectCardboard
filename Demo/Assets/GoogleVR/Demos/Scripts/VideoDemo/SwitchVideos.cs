@@ -13,6 +13,7 @@
 //    limitations under the License.
 
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -44,8 +45,7 @@ public class SwitchVideos : MonoBehaviour {
           missingLibText.text = NATIVE_LIBS_MISSING_MESSAGE;
           missingLibText.enabled = true;
         }
-      }
-      catch (Exception e) {
+      } catch (Exception e) {
         Debug.LogError(e);
         missingLibText.text = NATIVE_LIBS_MISSING_MESSAGE;
         missingLibText.enabled = true;
@@ -85,9 +85,17 @@ public class SwitchVideos : MonoBehaviour {
         } else {
             videoSamples[i].GetComponentInChildren<GvrVideoPlayerTexture>().ReInitializeVideo();
         }
-        videoSamples[i].SetActive(i == index);
+        // GvrVideoPlayerTexture needs an additional frame after CleanupVideo() to finish
+        // cleanup and allow its coroutine to exit, otherwise it gets permenantly stuck
+        // if it is deactivated too soon.
+        StartCoroutine(SetActiveDelayed(videoSamples[i], i == index));
       }
     }
     GetComponent<Canvas>().enabled = index == -1;
+  }
+
+  private IEnumerator SetActiveDelayed(GameObject go, bool state) {
+    yield return new WaitForEndOfFrame();
+    go.SetActive(state);
   }
 }

@@ -1,4 +1,6 @@
-﻿
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+
 Shader "AutoClick/FillRing" {
   Properties {
     _InnerRing ("InnerRing", float) = 1
@@ -44,7 +46,7 @@ Shader "AutoClick/FillRing" {
 
         float scale = lerp(_OuterRing, _InnerRing, v.vertex.z);
         float4 vert = float4(v.vertex.x * scale, v.vertex.y * scale, _Distance, 1.0);
-        myv2f.vertex = mul (UNITY_MATRIX_MVP, vert);
+        myv2f.vertex = UnityObjectToClipPos (vert);
 
         return myv2f;
       }

@@ -1,11 +1,10 @@
-// Version 1.1
+// Version 1.3
 using UnityEngine;
 using System.Collections;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class GazeClick : MonoBehaviour, IGvrPointer{ 
-
+public class GazeClick :  MonoBehaviour{ 
 	private Transform Parent;
 	private Material Source;
 	private Color OriginalColor;
@@ -16,7 +15,7 @@ public class GazeClick : MonoBehaviour, IGvrPointer{
 
 	private GameObject Target;
 	private EventSystem EventSystem;
-	private IGvrPointer GazePointer;
+	private GvrBasePointer GazePointer;
 
 	[Tooltip("How long the circle waits before starting the rotation after the expansion. (in Seconds)")]
 	public float DelayBeforeRotation = 0.1f;
@@ -72,11 +71,11 @@ public class GazeClick : MonoBehaviour, IGvrPointer{
 	// Use this for initialization
 	void Start () {
 
-		GvrBasePointer ParentObject = GameObject.FindObjectOfType<GvrBasePointer> ();
+		GvrReticlePointer ParentObject = GameObject.FindObjectOfType<GvrReticlePointer> ();
 		if (ParentObject != null) {
 			this.transform.parent = ParentObject.transform;
 
-		
+
 			if (RotationDirection == RotationDirection.clockwise) {
 				this.transform.localScale = new Vector3 (1, 1, 1);
 			} else {
@@ -123,13 +122,15 @@ public class GazeClick : MonoBehaviour, IGvrPointer{
 	}
 
 	void OnDisable(){
-		if (Parent.gameObject.GetComponent<GvrBasePointer> ().enabled) {
-			
+		if (Parent.gameObject.GetComponent<GvrReticlePointer> ().enabled) {
+
 			//GazeInputModule.gazePointer = GazePointer;
 		} else {
 			//GazeInputModule.gazePointer = null;
 		}
 	}
+
+	private GazeClickInternalPointer InternalPointer;
 
 	private void Initialize(){
 
@@ -137,7 +138,11 @@ public class GazeClick : MonoBehaviour, IGvrPointer{
 		//GazeInputModule.gazePointer = this;
 
 		GazePointer = GvrPointerManager.Pointer;
-		GvrPointerManager.Pointer = this;
+		InternalPointer=new GazeClickInternalPointer();
+		InternalPointer.GazePointer = this;
+		InternalPointer.PointerTransform = GazePointer.PointerTransform;
+		InternalPointer.ShouldUseExitRadiusForRaycast=GazePointer.ShouldUseExitRadiusForRaycast;
+		GvrPointerManager.Pointer = InternalPointer;
 
 		TargetMesh = Parent.GetComponent<MeshFilter> ().mesh;
 		RingMesh.vertices = TargetMesh.vertices;
@@ -227,7 +232,7 @@ public class GazeClick : MonoBehaviour, IGvrPointer{
 	}
 
 	private void HandleSpinningState(){
-		
+
 		if (circleState>=1) {
 			State = LoockingState.finished;
 			circleState = 1;
@@ -241,7 +246,7 @@ public class GazeClick : MonoBehaviour, IGvrPointer{
 	}
 
 	private void HandleFinishedState(){
-		
+
 		if (hasStayed) {
 			if (theSameFor>=DelayBeforeClick) {
 				Click ();
@@ -295,7 +300,7 @@ public class GazeClick : MonoBehaviour, IGvrPointer{
 
 
 	private void SetFillValue(float amount, float start=0){
-		
+
 		Copy.SetFloat ("_InnerRing",innerValue);
 		Copy.SetFloat ("_OuterRing",outerValue);
 		Copy.SetFloat ("_Distance",distanceValue);
@@ -315,7 +320,7 @@ public class GazeClick : MonoBehaviour, IGvrPointer{
 				Colors [max + 1] = new Color (FillColor.r, FillColor.g, FillColor.b, transparentValue);
 			}
 		}
-	
+
 		for (int i = max+2; i < RingMesh.vertices.Length; i++) {
 			if (UseOriginalColor) {
 				Colors [i] = OriginalColor;
@@ -413,26 +418,94 @@ public class GazeClick : MonoBehaviour, IGvrPointer{
 		GazePointer.OnPointerClickUp ();
 	}
 
-	public float GetMaxPointerDistance ()
-	{
-		return GazePointer.GetMaxPointerDistance ();
-	}
-
-	public Transform GetPointerTransform ()
-	{
-		return GazePointer.GetPointerTransform ();
-	}
-
 	public void GetPointerRadius(out float innerRadius, out float outerRadius) {
 
 		GazePointer.GetPointerRadius (out innerRadius, out outerRadius);
 	}
 
 
+
+	public bool ShouldUseExitRadiusForRaycast {
+		get {
+			return GazePointer.ShouldUseExitRadiusForRaycast;
+		}
+		set {
+			GazePointer.ShouldUseExitRadiusForRaycast=value;
+		}
+	}
+
+	public float MaxPointerDistance {
+		get {
+			return GazePointer.MaxPointerDistance;
+		}
+	}
 	#endregion
 
 }
-	
+
+public class GazeClickInternalPointer : GvrBasePointer {
+	public GazeClick GazePointer;
+	#region IGvrPointer implementation
+
+
+	public override void OnInputModuleEnabled ()
+	{
+		GazePointer.OnInputModuleEnabled ();
+	}
+
+	public override void OnInputModuleDisabled ()
+	{
+		GazePointer.OnInputModuleEnabled ();
+	}
+
+	public override void OnPointerEnter (GameObject targetObject, Vector3 intersectionPosition, Ray intersectionRay, bool isInteractive)
+	{
+		GazePointer.OnPointerEnter (targetObject,intersectionPosition,intersectionRay,isInteractive);
+	}
+
+	public override void OnPointerHover (GameObject targetObject, Vector3 intersectionPosition, Ray intersectionRay, bool isInteractive)
+	{
+		GazePointer.OnPointerHover (targetObject,intersectionPosition,intersectionRay,isInteractive);
+	}
+
+	public override void OnPointerExit (GameObject targetObject)
+	{
+		GazePointer.OnPointerExit (targetObject);
+	}
+
+	public override void OnPointerClickDown ()
+	{
+		GazePointer.OnPointerClickDown ();
+	}
+
+	public override void OnPointerClickUp ()
+	{
+		GazePointer.OnPointerClickUp ();
+	}
+
+	public override void GetPointerRadius(out float innerRadius, out float outerRadius) {
+
+		GazePointer.GetPointerRadius (out innerRadius, out outerRadius);
+	}
+
+	public bool ShouldUseExitRadiusForRaycast {
+		get {
+			return GazePointer.ShouldUseExitRadiusForRaycast;
+		}
+		set {
+			GazePointer.ShouldUseExitRadiusForRaycast=value;
+		}
+	}
+
+	public override float MaxPointerDistance {
+		get {
+			return GazePointer.MaxPointerDistance;
+		}
+	}
+
+	#endregion
+}
+
 
 public enum LoockingState {
 	normal,
