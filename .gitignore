@@ -36,3 +36,4 @@ sysinfo.txt
 # GVR package files that are to large to work with through git
 libgvrunity.a
 libgvrunity.a.meta
+Demo/Temp/TarGZ/GoogleVRForUnity
