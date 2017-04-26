@@ -7,7 +7,7 @@ public class MoveToTarget : MonoBehaviour {
 	GameObject targetData;
 	TargetDataPoint targetDataPoint;
 	string currentDataPoint;
-	float offset = 15.0f;
+	public float offset = 15.0f;
 
 	void MoveToDataPoint() {
 		Transform targetPointTransform = GameObject.Find(targetDataPoint.GetDataPoint ()).transform;
