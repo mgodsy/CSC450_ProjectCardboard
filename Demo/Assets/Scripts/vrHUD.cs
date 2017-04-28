@@ -17,12 +17,14 @@ using UnityEngine.UI;
 
 [RequireComponent(typeof(Text))]
 public class vrHUD : MonoBehaviour {
-  private const string DISPLAY_TEXT_FORMAT = "Megapoint {0}, Current Coordinates {1}";
+  private const string DISPLAY_TEXT_FORMAT = "MP: {0}\n{1}";
   
   private Text textField;
   string curCoor;
   GameObject targetData;
   GameObject megaPoint;
+  DataPoint dataPoint;
+  private int mpId; 
   TargetDataPoint targetDataPoint;
   string currentDataPoint;
 
@@ -33,14 +35,18 @@ public class vrHUD : MonoBehaviour {
   }
 
   void pullCoordinates(){
-      megaPoint = GameObject.Find(targetDataPoint.GetDataPoint ());
-      megaPoint..GetComponent<DataPoint>();
-  }
+      megaPoint = GameObject.Find(targetDataPoint.GetDataPoint());
+      dataPoint = megaPoint.GetComponent<DataPoint>();
+      curCoor = dataPoint.Coordinates;
+      mpId = dataPoint.id;
+    }
 
   void Start() {
-    targetData = GameObject.Find ("TargetData");
+    targetData = GameObject.Find("TargetData");
     targetDataPoint = targetData.GetComponent<TargetDataPoint>();
 	currentDataPoint = null;
+
+    pullCoordinates();
 
     if (cam == null) {
        cam = Camera.main;
@@ -55,6 +61,6 @@ public class vrHUD : MonoBehaviour {
   void LateUpdate() {
     
     textField.text = string.Format(DISPLAY_TEXT_FORMAT,
-        msf.ToString(MSF_FORMAT), Mathf.RoundToInt(fps));
+        mpId, curCoor);
   }
 }
