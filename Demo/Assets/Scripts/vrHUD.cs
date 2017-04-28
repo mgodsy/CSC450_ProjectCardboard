@@ -20,12 +20,12 @@ public class vrHUD : MonoBehaviour {
   private const string DISPLAY_TEXT_FORMAT = "MP: {0}\n{1}";
   
   private Text textField;
-  string curCoor;
-  GameObject targetData;
-  GameObject megaPoint;
-  DataPoint dataPoint;
-  private int mpId; 
-  TargetDataPoint targetDataPoint;
+  private string curCoor;
+  private GameObject targetData;
+  private GameObject megaPoint;
+  private DataPoint dataPoint;
+  private int mpId;
+  private TargetDataPoint targetDataPoint;
   string currentDataPoint;
 
   public Camera cam;
