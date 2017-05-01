@@ -26,7 +26,6 @@ public class vrHUD : MonoBehaviour {
   private DataPoint dataPoint;
   private int mpId;
   private TargetDataPoint targetDataPoint;
-  string currentDataPoint;
 
   public Camera cam;
 
@@ -44,7 +43,6 @@ public class vrHUD : MonoBehaviour {
   void Start() {
     targetData = GameObject.Find("TargetData");
     targetDataPoint = targetData.GetComponent<TargetDataPoint>();
-	currentDataPoint = null;
 
     pullCoordinates();
 

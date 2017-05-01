@@ -1,19 +1,23 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Text))]
+
 public class loadWiki : MonoBehaviour
 {
     private GameObject targetData;
     private GameObject megaPoint;
     private GameObject wikiCanvas;
     private GameObject wikiImage;
+    private GameObject wikiNum;
     private DataPoint dataPoint;
     private TargetDataPoint targetDataPoint;
     private string currentDataPoint;
     private string birdCode;
     private int birdCount;
-    private int birdNum;
+    private Text textField;
+    private string fileName;
+    Texture2D thisTexture;
+    private RawImage img;
     private Texture2D birdTexture;
 
 
@@ -22,7 +26,6 @@ public class loadWiki : MonoBehaviour
         currentDataPoint = targetDataPoint.GetDataPoint();
         megaPoint = GameObject.Find(currentDataPoint);
         dataPoint = megaPoint.GetComponent<DataPoint>();
-        birdNum = dataPoint.BirdTypeQuantity;
     }
 
     void pullBirdCodeStart()
@@ -35,11 +38,12 @@ public class loadWiki : MonoBehaviour
         birdCount = dataPoint.GetBirdCount(0);
     }
 
-    void fillWiki()
+    public void fillWiki()
     {
         wikiCanvas.SetActive(true);
-        birdTexture = (Texture2D)Resources.Load("WIKI/" + birdCode + ".png");
+        birdTexture = (Texture2D)Resources.Load("WIKI/" + birdCode);
         wikiImage.GetComponent<RawImage>().texture = birdTexture;
+        textField.text = birdCount.ToString();
     }
 
     void Start()
@@ -47,13 +51,15 @@ public class loadWiki : MonoBehaviour
         targetData = GameObject.Find("TargetData");
         wikiCanvas = GameObject.Find("WikiCanvas");
         wikiImage = GameObject.Find("Wiki");
+        wikiNum = GameObject.Find("NumText");
+        textField = wikiNum.GetComponent<Text>();
         targetDataPoint = targetData.GetComponent<TargetDataPoint>();
         currentDataPoint = null;
 
         prepBirdData();
         pullBirdCodeStart();
         pullBirdCountStart();
-        fillWiki();
+        wikiCanvas.SetActive(false);
 
     }
 }
