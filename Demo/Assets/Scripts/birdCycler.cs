@@ -17,8 +17,6 @@ public class birdCycler : MonoBehaviour {
     private Texture2D birdTexture;
     private Text textField;
     int i = 0;
-  
-
 
     void Awake() {
         
@@ -43,6 +41,7 @@ public class birdCycler : MonoBehaviour {
         birdTexture = (Texture2D)Resources.Load("WIKI/"+ birdCode);
         wikiImage.GetComponent<RawImage>().texture = birdTexture;
         textField.text = birdCount.ToString();
+        wikiCanvas.SetActive(true);
     }
 
     public void nextWiki(){
@@ -78,6 +77,11 @@ public class birdCycler : MonoBehaviour {
             loadWiki();
         }
 
+    }
+
+    public void closeWiki()
+    {
+        wikiCanvas.SetActive(false);
     }
 
     void Start() {
